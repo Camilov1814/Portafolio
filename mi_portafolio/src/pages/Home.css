@@ -1,0 +1,23 @@
+html, body {
+    height: 100%;
+    overflow: hidden;
+  }
+  
+  .snap-y {
+    scroll-snap-type: y mandatory;
+  }
+  
+  .snap-start {
+    scroll-snap-align: start;
+  }
+  /* Ocultar la barra de desplazamiento para Chrome, Safari y Opera */
+.hide-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+  
+  /* Ocultar la barra de desplazamiento para IE, Edge y Firefox */
+  .hide-scrollbar {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+  }
+
